@@ -16,6 +16,11 @@ android {
         multiDexEnabled = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags += ""
+            }
+        }
     }
 
     buildTypes {
@@ -36,6 +41,12 @@ android {
     }
     buildFeatures {
         compose = true
+    }
+    externalNativeBuild {
+        cmake {
+            path = file("src/main/cpp/CMakeLists.txt")
+            version = "3.22.1"
+        }
     }
 
 }
@@ -68,7 +79,13 @@ dependencies {
     implementation(libs.moshi.kotlin.codegen)
     implementation(libs.coil.compose)
     implementation(libs.androidx.material)
+    implementation(libs.mockwebserver)
+    implementation(libs.mockito.core)
+    implementation(libs.mockito.kotlin)
+    implementation(libs.converter.gson)
+    implementation(libs.gson)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
 }
