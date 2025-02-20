@@ -1,7 +1,7 @@
 package com.veera.SystemTask.viewmodels
 
 import com.veera.systemtaskcompose.character.data.repository.CharacterRepo
-import com.veera.systemtaskcompose.character.ui.home.HomeViewModel
+import com.veera.systemtaskcompose.character.presentation.viewmodel.HomeViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.test.*
 import org.junit.*

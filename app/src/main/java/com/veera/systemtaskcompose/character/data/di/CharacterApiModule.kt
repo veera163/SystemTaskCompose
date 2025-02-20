@@ -1,7 +1,7 @@
-package com.veera.systemtaskcompose.character.di
+package com.veera.systemtaskcompose.character.data.di
 
-import com.veera.systemtaskcompose.character.data.api.ApiConstants
-import com.veera.systemtaskcompose.character.data.api.CharacterApi
+import com.veera.systemtaskcompose.Utils.ApiConstants
+import com.veera.systemtaskcompose.character.data.network.CharacterApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

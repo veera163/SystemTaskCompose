@@ -1,7 +1,7 @@
 package com.veera.systemtaskcompose.character.data.repository
 
-import com.veera.systemtaskcompose.character.data.api.CharacterApi
-import com.veera.systemtaskcompose.character.data.api.model.Character
+import com.veera.systemtaskcompose.character.data.network.CharacterApi
+import com.veera.systemtaskcompose.character.data.model.Character
 import javax.inject.Inject
 
 class CharacterRepo @Inject constructor(

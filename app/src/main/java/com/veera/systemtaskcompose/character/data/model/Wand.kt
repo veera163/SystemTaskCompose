@@ -1,4 +1,4 @@
-package com.veera.systemtaskcompose.character.data.api.model
+package com.veera.systemtaskcompose.character.data.model
 
 
 import com.squareup.moshi.Json

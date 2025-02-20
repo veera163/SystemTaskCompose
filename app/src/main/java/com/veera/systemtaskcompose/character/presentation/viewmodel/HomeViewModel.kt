@@ -1,8 +1,8 @@
-package com.veera.systemtaskcompose.character.ui.home
+package com.veera.systemtaskcompose.character.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.veera.systemtaskcompose.character.data.api.model.Character
+import com.veera.systemtaskcompose.character.data.model.Character
 import com.veera.systemtaskcompose.character.data.repository.CharacterRepo
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

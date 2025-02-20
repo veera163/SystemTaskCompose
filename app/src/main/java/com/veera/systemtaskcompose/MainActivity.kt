@@ -1,4 +1,4 @@
-package com.veera.systemtaskcompose.character
+package com.veera.systemtaskcompose
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.veera.systemtaskcompose.character.ui.home.HomeScreen
+import com.veera.systemtaskcompose.character.presentation.screens.HomeScreen
 import com.veera.systemtaskcompose.character.ui.theme.CharacterTheme
 import dagger.hilt.android.AndroidEntryPoint
 

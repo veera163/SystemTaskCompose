@@ -1,6 +1,6 @@
 package com.veera.systemtaskcompose
 
-import com.veera.systemtaskcompose.character.data.api.CharacterApi
+import com.veera.systemtaskcompose.character.data.network.CharacterApi
 import kotlinx.coroutines.test.runTest
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer

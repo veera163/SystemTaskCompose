@@ -1,7 +1,7 @@
 package com.veera.SystemTask.repository
 
-import com.veera.systemtaskcompose.character.data.api.CharacterApi
-import com.veera.systemtaskcompose.character.data.api.model.Character
+import com.veera.systemtaskcompose.character.data.network.CharacterApi
+import com.veera.systemtaskcompose.character.data.model.Character
 import com.veera.systemtaskcompose.character.data.repository.CharacterRepo
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert
