@@ -12,8 +12,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import coil.compose.rememberAsyncImagePainter
 import coil.compose.rememberImagePainter
 import com.veera.systemtaskcompose.character.data.api.model.Character
 
@@ -42,10 +44,9 @@ fun HomeScreen() {
     }
 
 }
-
 @Composable
 fun CharacterImageCard(character: Character) {
-    val imagerPainter = rememberImagePainter(data = character.image)
+    val imagerPainter = rememberAsyncImagePainter(model = character.image)
 
     Card(
         shape = MaterialTheme.shapes.medium,
@@ -63,7 +64,7 @@ fun CharacterImageCard(character: Character) {
             )
 
             Surface(
-                color = MaterialTheme.colors.onSurface.copy(alpha = .3f),
+                color = MaterialTheme.colors.surface.copy(alpha = .3f),
                 modifier = Modifier.align(Alignment.BottomCenter),
                 contentColor = MaterialTheme.colors.surface
             ) {
@@ -72,7 +73,7 @@ fun CharacterImageCard(character: Character) {
                         .fillMaxWidth()
                         .padding(4.dp)
                 ) {
-                    Text(text = "Real name: ${character.actor}")
+                    Text(text = "Real name: ${character.actor}",)
                     Text(text = "Actor name: ${character.name}")
                 }
             }

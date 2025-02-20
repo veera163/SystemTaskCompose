@@ -24,4 +24,16 @@ data class Character(
     val house: String,
     @Json(name = "image")
     val image: String,
+    @Json(name = "name")
+    val name: String,
+    @Json(name = "patronus")
+    val patronus: String,
+    @Json(name = "species")
+    val species: String,
+    @Json(name = "wand")
+    val wand: Wand,
+    @Json(name = "wizard")
+    val wizard: Boolean,
+    @Json(name = "yearOfBirth")
+    val yearOfBirth: String
 )
