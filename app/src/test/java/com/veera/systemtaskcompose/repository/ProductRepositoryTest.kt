@@ -33,8 +33,8 @@ class ProductRepositoryTest {
     @Test
     fun testGetProducts_expectedProductList() = runTest {
         val productList = listOf<Character>(
-            Character("Prod 1", true, "", "", "", "","","",""),
-            Character("Prod 2", true, "", "", "", "","","",""),
+            Character("Prod 1", true, "", "", "", "","","","",""),
+            Character("Prod 2", true, "", "", "", "","","","",""),
         )
         Mockito.`when`(productsAPI.getCharacter()).thenReturn(productList)
 
